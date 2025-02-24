@@ -1,0 +1,58 @@
+# Dependencies
+/node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Angular
+/.angular
+/dist
+/.sass-cache
+
+# IDEs and editors
+/.idea
+/.vscode
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System Files
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled output
+/tmp
+/out-tsc
+/bazel-out
+
+# Miscellaneous
+/.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+.angular
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# Backup files
+*.bak
+*.zip
+*.tar.gz

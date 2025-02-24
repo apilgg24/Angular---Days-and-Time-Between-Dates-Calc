@@ -1,0 +1,35 @@
+<div class="calculator-container">
+  <h2>Days Calculator: Number of Days Between Two Dates</h2>
+  
+  <form [formGroup]="calculatorForm" (ngSubmit)="calculateDifference()">
+    <div class="date-inputs">
+      <div class="input-group">
+        <label>Start Date:</label>
+        <input type="date" formControlName="startDate">
+        <input type="time" formControlName="startTime">
+      </div>
+
+      <div class="input-group">
+        <label>End Date:</label>
+        <input type="date" formControlName="endDate">
+        <input type="time" formControlName="endTime">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="submit" [disabled]="!calculatorForm.valid">Calculate</button>
+      <button type="button" (click)="resetForm()">Reset</button>
+    </div>
+  </form>
+
+  <div class="result" *ngIf="result">
+    <h3>Duration:</h3>
+    <p>{{result.days}} days, {{result.hours}} hours, {{result.minutes}} minutes</p>
+    
+    <h4>Alternative formats:</h4>
+    <ul>
+      <li>Total hours: {{result.totalHours}} hours</li>
+      <li>Total minutes: {{result.totalMinutes}} minutes</li>
+    </ul>
+  </div>
+</div> 
